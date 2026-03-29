@@ -25,16 +25,17 @@ Working implementations live in [`reasoning-demos/`](reasoning-demos/README.md) 
 
 ## 2. Combining Chain-of-Thought / Tree-of-Thought with ReAct
 
-- [ ] Draft answer
-- [ ] Architecture sketch (when to nest, when to alternate)
+- [x] Draft answer
+- [x] Architecture sketch (when to nest, when to alternate)
 
-**Notes (fill later):**
+**Notes:**
+
+Runnable combos in [`reasoning-combination/`](reasoning-combination/README.md) (`run_combos.py`): **CoT→ReAct**, **interleaved** CoT/ReAct, **ToT→ReAct**, **ToT+CoT→ReAct**, **ToT→ReAct→replan**, **GoT (DAG)→ReAct** per node + merge. Same idea throughout: **ReAct** = tool loop; **CoT/ToT/GoT** = structured deliberation **before** or **between** bursts—see README mode table and optional LLM trace for prompts.
 
 ---
 
 ## 3. Word embedding vs sentence embedding
 
-_(Original note said “work embedding”—treating as **word** vs **sentence**.)_
 
 - [ ] Draft answer
 - [ ] When to use which
@@ -157,3 +158,4 @@ _(Clarify later: KV cache in transformers vs “keys/values” in attention vs s
 | ---------- | ------------------ | ------- |
 | 2026-03-29 | —                  | Created draft tracker |
 | 2026-03-29 | 1                  | Reasoning demos (CoT, ReAct, ToT, etc.); puzzle 1 marked answered |
+| 2026-03-29 | 2                  | reasoning-combination (CoT/ToT/GoT + ReAct); puzzle 2 marked answered |
