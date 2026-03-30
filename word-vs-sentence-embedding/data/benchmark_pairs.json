@@ -1,0 +1,69 @@
+{
+  "description": "Tiny hand-written set for comparing sentence embeddings vs naive word-bag pooling.",
+  "paraphrases": [
+    {
+      "a": "The quick brown fox jumps over the lazy dog.",
+      "b": "A fast brown fox leaped above a sleepy dog."
+    },
+    {
+      "a": "Machine learning models need clean training data.",
+      "b": "To train ML models you need well-prepared data."
+    },
+    {
+      "a": "The quarterly revenue exceeded analyst expectations.",
+      "b": "Q4 sales came in above what analysts had forecast."
+    },
+    {
+      "a": "She resolved the customer ticket before lunch.",
+      "b": "The support case was closed by her before noon."
+    },
+    {
+      "a": "Vector search returns approximate nearest neighbors.",
+      "b": "ANN indexes give you approximate top-k matches."
+    },
+    {
+      "a": "Embeddings map text into dense numeric vectors.",
+      "b": "Text is represented as continuous vectors via embeddings."
+    },
+    {
+      "a": "The deployment failed due to a missing environment variable.",
+      "b": "The release broke because a required env var was absent."
+    },
+    {
+      "a": "Retrieval-augmented generation grounds answers in documents.",
+      "b": "RAG conditions the model on retrieved context."
+    }
+  ],
+  "unrelated": [
+    { "a": "Pizza margherita is best with fresh basil.", "b": "The kernel panic occurred after the driver update." },
+    { "a": "How do I renew my passport?", "b": "Gradient descent minimizes the loss function." },
+    { "a": "The violin concerto was performed in Vienna.", "b": "S3 bucket policies restrict cross-account access." },
+    { "a": "Cats sleep on warm keyboards.", "b": "OAuth tokens expire according to the authorization server." },
+    { "a": "Winter hiking requires layered clothing.", "b": "Postgres MVCC avoids read locks on writers." },
+    { "a": "She planted tulips along the fence.", "b": "The microservice timed out contacting the payment API." },
+    { "a": "French press coffee needs coarse grounds.", "b": "Kubernetes evicted the pod for memory pressure." },
+    { "a": "The museum opens at ten on weekends.", "b": "cosine similarity measures angle between vectors." }
+  ],
+  "context_clash": [
+    {
+      "a": "We sat on the bank watching the ducks float by.",
+      "b": "The investment bank approved the acquisition loan.",
+      "note": "Same surface word bank; different senses."
+    },
+    {
+      "a": "He used a bat to hit the baseball.",
+      "b": "A bat flew out of the cave at dusk.",
+      "note": "bat: sports vs animal"
+    },
+    {
+      "a": "The crane lifted steel beams at the construction site.",
+      "b": "We saw a crane wading in the shallow pond.",
+      "note": "crane: machine vs bird"
+    },
+    {
+      "a": "She drew a long bow across the cello strings.",
+      "b": "The archer drew the bow and aimed at the target.",
+      "note": "bow: music vs weapon"
+    }
+  ]
+}
