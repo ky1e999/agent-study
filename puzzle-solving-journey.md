@@ -47,10 +47,12 @@ Runnable demo and benchmark in [`word-vs-sentence-embedding/`](word-vs-sentence-
 
 ## 4. Switching embedding model A → B after indexing
 
-- [ ] Draft answer
+- [~] Draft answer (index/query **must** share the same embedding stack — see [`README.md`](README.md#dense-rag-index-and-query-must-share-the-same-embedding-stack))
 - [ ] Migration / dual-write / re-embed strategy
 
-**Notes (fill later):**
+**Notes:**
+
+Core constraint (why A≠B breaks naive retrieval) is documented in the repo [`README.md`](README.md#dense-rag-index-and-query-must-share-the-same-embedding-stack). Migration tactics TBD.
 
 ---
 
